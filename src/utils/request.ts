@@ -35,7 +35,7 @@ Axios.interceptors.response.use(
       }
     }
     if (data.code != 0) {
-      ElMessage.error(data.message)
+      console.log(data.message)
     }
     return response
   },
